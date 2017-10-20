@@ -9,7 +9,7 @@ body {
   left: 0;
   z-index: -1;
   width: 100%;
-  height: 100%
+  height: 901px;
 }
 
 img {
@@ -62,6 +62,54 @@ tbody > tr:hover {
 }
 
 /* INDEX */
+#bug {
+  position: fixed;
+  top: 18px;
+  left: 18px;
+  width: 28px;
+}
+#bug:hover, #notification:hover {
+  cursor: pointer;
+  cursor: hand;
+}
+
+#notification {
+  position: fixed;
+  top: 14px;
+  right: 80px;
+  width: 28px;
+}
+
+#bug-menu {
+  visibility: hidden;
+  width: 295px;
+	height: 314px;
+	border-radius: 4px;
+	background-color: #ffffff;
+	box-shadow: 0 3px 30px 0 #697489;
+  position:fixed;
+  top: 38px;
+  left: 12px;
+}
+
+#bug-menu img:hover {
+  cursor: pointer;
+  cursor: hand;
+}
+
+#menu-logo {
+  margin: 16px 0px 0px 13px;
+  width: 122px;
+  display: block;
+}
+
+#bug-menu > img:not(:first-child), #bug-menu > a > img {
+  height: 60px;
+  margin: 10px;
+  padding: 20px;
+  display: inline-block;
+}
+
 .left-nav {
   width: 28px;
   margin: 0;
@@ -144,12 +192,11 @@ input[type=text]::placeholder {
 }
 
 input[type=text]:focus {
-  height: 20px;
+  height: 22px;
   outline: none;
   margin-top: .2em !important;
-  /*line-height: 1.2;*/
-  transition: margin-top .3s, height .3s ease-in;
-  -webkit-transition: margin-top .3s, height .3s ease-in;
+  transition: margin-top .2s ease-in-out, height .2s ease-in-out;
+  -webkit-transition: margin-top .2s ease-in-out, height .2s ease-in-out;
 }
 
 .row {
