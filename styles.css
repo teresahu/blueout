@@ -1,5 +1,6 @@
 body {
   font-family: Cabin, sans-serif;
+  margin: 0;
 }
 
 .bg {
@@ -61,6 +62,23 @@ tbody > tr:hover {
 }
 
 /* INDEX */
+.left-nav {
+  width: 28px;
+  margin: 0;
+  float: left;
+}
+
+.left-nav img {
+  margin: 0;
+  width: 18px;
+  padding: 22px;
+  cursor: pointer;
+  cursor: hand;
+}
+
+.left-nav img:hover {
+  background-color: #002236;
+}
 
 .inner-container {
   padding: .25em 0em .25em 1.25em;
@@ -70,7 +88,7 @@ tbody > tr:hover {
   box-shadow: 0 9px 8px 0 rgba(8, 8, 8, 0.56), 0 1px 2px 0 #a9b1be;
 	border: solid 1px #cbcfd7;
   z-index: 1;
-  margin: 10% 0 0 7%;
+  margin: 10% 0 0 62px;
 }
 
 .section {
