@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!--  Meta  -->
+  <meta charset="UTF-8" />
+  <title>Blue Out</title>
+
+  <!--  Styles  -->
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
+</head>
+<body>
+  <img src="bg-index.png" class="bg">
+  <div class="inner-container">
+    <!-- <h2>6. ASSETS & LIABILITIES</h2> -->
+    <h3>Cash Deposit Towards Purchase</h3>
+    <div class="row">
+      <input type="text" placeholder="Amount">
+      <input type="text" placeholder="Held by">
+    </div>
+    <hr />
+    <h3>Checking and Savings</h3>
+    <div class="section">
+      <h4>Bank of America</h4>
+      <div class="row">
+        <input type="text" placeholder="Account/Asset Type">
+        <input type="text" placeholder="Account in the name of">
+      </div>
+      <div class="row">
+        <input type="text" placeholder="Account number">
+        <input type="text" onblur="flash(this.value);" placeholder="$ Cash value">
+      </div>
+    </div>
+    <div class="section">
+      <h4>PNC</h4>
+      <div class="row">
+        <input type="text" placeholder="Account/Asset Type">
+        <input type="text" placeholder="Account in the name of">
+      </div>
+      <div class="row">
+        <input type="text" placeholder="Account number">
+        <input type="text" onclick="storeValue(this.value)" onfocusout="compareValue(this.value);" placeholder="$ Cash value">
+      </div>
+    </div>
+  </div>
+  <div class="right-panel">
+    <span class="cap-text">LOAN INFO</span>
+    <div class="row">
+      <p>
+        <b>10216 Kingbird Ct, Klamath Falls, OR</b><br/>
+        Single Family | Owner Occupied
+      </p>
+      <p>
+        <b>$355,900</b><br/>
+        Est. Value
+      </p>
+    </div>
+    <p>
+      <b>3.25%</b><br/>
+      Fixed 30yr Conv
+    </p>
+  </div>
+
+
+
+  <!-- <div id="wrapper">
+    <div class="flashEffect">
+    </div>
+  </div> -->
+</body>
+<!-- <body class="outer-container">
+  <div class="inner-container">
+    <main class="content">
+      <img class="tab" src="tab.png">
+      <div class="form-content">
+        <input type="text"
+      </div>
+    </main>
+    <nav class="nav">nav</nav>
+    <aside class="summary">summary</aside>
+  </div>
+  <script src="script.js"></script>
+</body> -->
+</html>
