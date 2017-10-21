@@ -1,6 +1,12 @@
+/* MEDIA QUERIES */
+
+@media (max-width: 12450px) {
+}
+
 body {
   font-family: Cabin, sans-serif;
   margin: 0;
+  background-color: #012337;
 }
 
 .bg {
@@ -128,6 +134,15 @@ tbody > tr:hover {
   background-color: #002236;
 }
 
+/* TASK INBOX */
+#taskInbox {
+  width: 307px;
+	height: 901px;
+	background-image: radial-gradient(circle at 86% 7%, #024872, #012a42);
+	border: solid 1px #697489;
+}
+
+
 .inner-container {
   padding: .25em 0em .25em 1.25em;
   width: 68.75%;
@@ -225,13 +240,32 @@ input[type=text]:focus {
   margin-left: 5%;
 }
 
+/* RIGHT PANEL */
+
 .right-panel {
   color: #fff;
-  float:right;
+  float: right;
+  width: 20%;
+  margin-right: 1%;
 }
 
 span.cap-text {
   text-transform: capitalize;
   font-size: 17px;
 	font-weight: 500;
+}
+
+/* TASK INBOX */
+
+#task-inbox {
+  width: 24%;
+	height: 930px;
+	background-image: radial-gradient(circle at 86% 7%, #024872, #012a42);
+	border: solid 1px #697489;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  visibility: hidden;
+  transition: width 2s ease-in-out;
+  -webkit-transition: width 2s ease-in-out;
 }
