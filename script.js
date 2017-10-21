@@ -18,8 +18,13 @@ function toggleMenu() {
 }
 
 function openTaskInbox() {
-  var taskInbox = document.getElementById("task-inbox");
-  if (taskInbox.style.visibility === "" || taskInbox.style.visibility === "hidden") {
-    taskInbox.style.visibility = "visible";
-  }
+  // var taskInbox = document.getElementById("task-inbox");
+  // if (taskInbox.style.visibility === "" || taskInbox.style.visibility === "hidden") {
+  //   taskInbox.style.visibility = "visible";
+  // }
+  document.getElementById("task-inbox").style.width = "24%"
+}
+
+function closeTaskInbox() {
+    document.getElementById("task-inbox").style.width = "0";
 }

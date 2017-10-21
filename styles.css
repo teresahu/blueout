@@ -209,9 +209,13 @@ input[type=text]::placeholder {
 input[type=text]:focus {
   height: 22px;
   outline: none;
-  margin-top: .2em !important;
-  transition: margin-top .2s ease-in-out, height .2s ease-in-out;
-  -webkit-transition: margin-top .2s ease-in-out, height .2s ease-in-out;
+  margin: .2em 1em .5em 0em !important;
+  transition: margin-top .2s ease-in, height .2s ease-in;
+  -webkit-transition: margin-top .1s ease-in, height .1s ease-in;
+}
+
+input[type=text]:focus::placeholder {
+  color: #012337;
 }
 
 .row {
@@ -258,14 +262,16 @@ span.cap-text {
 /* TASK INBOX */
 
 #task-inbox {
-  width: 24%;
+  width: 0;
+  /*width: 24%;*/
 	height: 930px;
 	background-image: radial-gradient(circle at 86% 7%, #024872, #012a42);
 	border: solid 1px #697489;
   position: fixed;
   top: 0px;
   right: 0px;
-  visibility: hidden;
-  transition: width 2s ease-in-out;
-  -webkit-transition: width 2s ease-in-out;
+  z-index: 1;
+  transition: .5s ease-in-out;
+  -webkit-transition: .5s ease-in-out;
+  overflow-x: hidden;
 }
