@@ -434,3 +434,14 @@ span.cap-text {
   cursor: pointer;
   cursor: hand;
 }
+
+.accordion-wrapper .accordion-panel.is-active .accordion-content:after {
+    content: '...';
+    position: absolute;
+    right: 0;
+    font-size: 20px;
+    line-height: 20px;
+    color: #fff;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+}
