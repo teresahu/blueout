@@ -7,8 +7,10 @@
   <title>Blue Out</title>
 
   <!--  Styles  -->
-  <link rel="stylesheet" href="styles.css">
-  <script src="script.js"></script>
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles/accordionjs.min.css">
+  <script src="scripts/script.js"></script>
+  <script src="scripts/accordionjs.min.js" charset="utf-8"></script>
 </head>
 <body>
   <img src="bg-index.png" class="bg">
@@ -50,6 +52,7 @@
 
   <div id="task-inbox">
     <h1>TASK INBOX</h1>
+    <span class="close" onclick="closeTaskInbox();">+</span>
     <section>
       <h2>Today</h2>
       <ul>
@@ -76,6 +79,36 @@
         </li>
       </ul>
     </section>
+
+    <!-- Accordion wrapper -->
+    <div id="the-accordion" class="accordion-wrapper">
+      <!-- accordion panel -->
+      <div class="accordion-panel">
+        <div class="accordion-title">
+          <a href="#">
+            Scott Fitzgerald
+            <span class="notif-number">3</span>
+            <span class="notif-id">29475629</span>
+          </a>
+        </div>
+        <div class="accordion-content">
+            werk
+        </div>
+      </div>
+      <!-- accordion panel -->
+      <div class="accordion-panel">
+        <div class="accordion-title">
+          <a href="#">
+            Hermione Granger
+            <span class="notif-number">3</span>
+            <span class="notif-id">93856584</span>
+          </a>
+        </div>
+        <div class="accordion-content">
+            please
+        </div>
+      </div>
+    </div>
 
     <section>
       <h2>Yesterday</h2>
@@ -171,6 +204,8 @@
       </div>
     </div>
   </div>
-
+  <script type="text/javascript">
+    (function(){ new AccordionJS();})();
+  </script>
   </body>
 </html>
