@@ -140,7 +140,7 @@ tbody > tr:hover {
 
 .left-nav {
   width: 28px;
-  margin: 0;
+  margin-top: 3%;
   float: left;
 }
 
@@ -170,14 +170,11 @@ tbody > tr:hover {
 
 
 .inner-container {
-  padding: .25em 0em .25em 1.25em;
-  width: 68.75%;
+  padding: .25em 0em .25em 0em;
+  width: 69%;
 	height: 820px;
-	background-color: #ffffff;
-  box-shadow: 0 9px 8px 0 rgba(8, 8, 8, 0.56), 0 1px 2px 0 #a9b1be;
-	border: solid 1px #cbcfd7;
-  z-index: 1;
-  margin: 10% 0 0 62px;
+	background-color: rgba(0, 0, 0, 0);
+  margin: 70px 0 0 58px;
 }
 
 .section {
@@ -269,7 +266,7 @@ input[type=text]:focus::placeholder {
   background-color: yellow;
   position: absolute;
   margin-top: 300px;
-  margin-left: 5%;
+  margin-left: 4%;
 }
 
 /* RIGHT PANEL */
@@ -279,6 +276,7 @@ input[type=text]:focus::placeholder {
   float: right;
   width: 22%;
   margin-right: 1%;
+  margin-top:5%;
 }
 
 span.cap-text {
@@ -432,4 +430,143 @@ span.cap-text {
   -ms-transform: rotate(45deg);
   cursor: pointer;
   cursor: hand;
+}
+
+/* TABS */
+tabs {
+  position: relative;
+	margin: 40px auto;
+	width: 750px;
+  -webkit-transform: skewX(30deg);
+  transform: skewX(30deg);
+}
+.tabs input {
+	position: absolute;
+	z-index: 1000;
+	width: 120px;
+	height: 40px;
+	left: 0px;
+	top: 0px;
+	opacity: 0;
+}
+.tabs input#tab-2{
+	left: 120px;
+}
+.tabs input#tab-3{
+	left: 240px;
+}
+.tabs input#tab-4{
+	left: 360px;
+}
+
+.tabs label {
+  background: -webkit-linear-gradient(#153a5b, #1f517a, #163D5D);
+  background: linear-gradient(#153a5b, #1f517a, #163D5D);
+  background-size: 1px 80px;
+  transition: background .4s ease-in-out;
+  -webkit-transition: background .4s ease-in-out;
+	border: solid 1px #697489;
+	line-height: 40px;
+	height: 40px;
+	position: relative;
+	padding: 0 20px;
+  float: left;
+	display: block;
+	width: 140px;
+  border-radius: 3px 3px 0 0;
+  transform: skewX(10deg);
+}
+
+.tabs label[for="tab-4"] {
+  background: rgba(0, 0, 0, 0) !important;
+  border: 0;
+  width: 20px;
+  font-size: 20px;
+}
+
+.tabs label:hover {
+  cursor: pointer;
+}
+
+.tabs .label-name {
+  letter-spacing: 1px;
+  font-family: Avenir-Roman;
+	font-size: 15px;
+	color: #a3d6ff;
+	font-weight: 200;
+	text-align: center;
+  transform: skewX(-10deg);
+}
+
+.tabs input:hover + label {
+  background-position: 40px;
+}
+
+.tabs label:first-of-type {
+    z-index: 4;
+}
+
+.tab-label-2 {
+    z-index: 3;
+}
+
+.tab-label-3 {
+    z-index: 2;
+}
+
+.tab-label-4 {
+    z-index: 1;
+}
+
+.tabs input:checked + label {
+  background: #102841;
+	z-index: 6;
+}
+
+.tabs input.tab-selector-1:checked ~ .content .content-1,
+.tabs input.tab-selector-2:checked ~ .content .content-2,
+.tabs input.tab-selector-3:checked ~ .content .content-3,
+.tabs input.tab-selector-4:checked ~ .content .content-4 {
+    z-index: 100;
+    opacity: 1;
+    transition: all ease-out 0.4s 0.4s;
+}
+
+.content {
+  top: 42px;
+  left: 4px;
+  background: #fff;
+	position: relative;
+  width: 100%;
+	height: 780px;
+	z-index: 5;
+  box-shadow: 0 9px 8px 0 rgba(8, 8, 8, 0.56), 0 1px 2px 0 #a9b1be;
+	border: solid 1px #cbcfd7;
+  border-radius: 0 3px 3px 3px;
+}
+
+.content div {
+  position: absolute;
+	top: 0;
+	left: 0;
+	padding: 10px 40px;
+	z-index: 1;
+  opacity: 0;
+  transition: all linear 0.1s;
+}
+
+.content div h2,
+.content div h3{
+	color: #398080;
+}
+.content div p {
+	font-size: 14px;
+	line-height: 22px;
+	font-style: italic;
+	text-align: left;
+	margin: 0;
+	color: #777;
+	padding-left: 15px;
+	font-family: Cambria, Georgia, serif;
+	border-left: 8px solid rgba(63,148,148, 0.1);
 }
