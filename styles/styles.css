@@ -20,10 +20,15 @@
   }*/
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 body {
   font-family: Cabin, sans-serif;
   margin: 0;
   background-color: #012337;
+  overflow: hidden;
 }
 
 .bg {
@@ -177,12 +182,6 @@ tbody > tr:hover {
   margin: 70px 0 0 58px;
 }
 
-.section {
-  border-radius: 4px;
-	border: solid 1px #a3d6ff;
-  padding: .3em 1em 1em 1em;
-  margin: 1em 1em 1em 0em;
-}
 
 .form-content {
   background-color: #fff;
@@ -440,7 +439,7 @@ tabs {
   -webkit-transform: skewX(30deg);
   transform: skewX(30deg);
 }
-.tabs input {
+.tabs input[type="radio"] {
 	position: absolute;
 	z-index: 1000;
 	width: 180px;
@@ -449,17 +448,21 @@ tabs {
   top: 70px;
 	opacity: 0;
 }
-.tabs input#tab-2{
+.tabs input#tab-2[type="radio"]{
 	left: 240px;
 }
-.tabs input#tab-3{
+.tabs input#tab-3[type="radio"]{
 	left: 420px;
 }
-.tabs input#tab-4{
+.tabs input#tab-4[type="radio"]{
 	left: 600px;
 }
 
-.tabs label {
+.tabs input[type="radio"]:hover {
+  cursor: pointer;
+}
+
+.tabs label.tab {
   background: -webkit-linear-gradient(#153a5b, #1f517a, #163D5D);
   background: linear-gradient(#153a5b, #1f517a, #163D5D);
   background-size: 1px 80px;
@@ -477,15 +480,11 @@ tabs {
   transform: skewX(10deg);
 }
 
-.tabs label[for="tab-4"] {
+.tabs label.tab[for="tab-4"] {
   background: rgba(0, 0, 0, 0) !important;
   border: 0;
   width: 20px;
   font-size: 20px;
-}
-
-.tabs label:hover {
-  cursor: pointer;
 }
 
 .tabs .label-name {
@@ -498,11 +497,11 @@ tabs {
   transform: skewX(-10deg);
 }
 
-.tabs input:hover + label {
+.tabs input:hover + label.tab {
   background-position: 40px;
 }
 
-.tabs label:first-of-type {
+.tabs label.tab:first-of-type {
     z-index: 4;
 }
 
@@ -518,7 +517,7 @@ tabs {
     z-index: 1;
 }
 
-.tabs input:checked + label {
+.tabs input:checked + label.tab {
   background: #102841;
 	z-index: 6;
 }
@@ -561,9 +560,15 @@ tabs {
 }
 .content div p {
 	font-size: 14px;
-	line-height: 22px;
 	text-align: left;
 	margin: 0;
 	color: #777;
 	padding-left: 10px;
+}
+
+.content section.section {
+  border-radius: 4px;
+	border: solid 1px #a3d6ff;
+  padding: .3em 1em 1em 1em;
+  margin: 1em 1em 1em 0em;
 }
