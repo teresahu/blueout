@@ -323,7 +323,7 @@ span.cap-text {
   margin: 0em 0em 1.3em 0em;
   border-radius: 3px;
   font-family: Cabin, sans-serif;
-	font-size: 12px;
+	font-size: 13px;
 	font-weight: 400;
 	text-align: left;
 	color: #333333;
@@ -443,20 +443,20 @@ tabs {
 .tabs input {
 	position: absolute;
 	z-index: 1000;
-	width: 120px;
+	width: 180px;
 	height: 40px;
-	left: 0px;
-	top: 0px;
+  left: 58px;
+  top: 70px;
 	opacity: 0;
 }
 .tabs input#tab-2{
-	left: 120px;
-}
-.tabs input#tab-3{
 	left: 240px;
 }
+.tabs input#tab-3{
+	left: 420px;
+}
 .tabs input#tab-4{
-	left: 360px;
+	left: 600px;
 }
 
 .tabs label {
@@ -562,11 +562,8 @@ tabs {
 .content div p {
 	font-size: 14px;
 	line-height: 22px;
-	font-style: italic;
 	text-align: left;
 	margin: 0;
 	color: #777;
-	padding-left: 15px;
-	font-family: Cambria, Georgia, serif;
-	border-left: 8px solid rgba(63,148,148, 0.1);
+	padding-left: 10px;
 }
