@@ -45,10 +45,13 @@ function changeOpacity(){
 }
 
 function openTab(){
-  var labels = document.getElementsByClassName("tab");
-  var newTabLabel = labels[3];
-  newTabLabel.style.display="block";
-  labels[4].style.display="none";
+  var d = document.getElementsByClassName("tabs")[0];
+  for (var i=0; i<4; i++){
+    d.removeChild(d.childNodes[17]);
+  }
+  d.childNodes[13].style.display = "block";
+  d.childNodes[13].setAttribute("checked", "checked");
+  d.childNodes[15].style.display = "block";
 }
 
 function stopOpacity() {

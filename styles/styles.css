@@ -509,6 +509,10 @@ tabs {
 	left: 600px;
 }
 
+.tabs input#tab-5[type="radio"]{
+	left: 600px;
+}
+
 .tabs input[type="radio"]:hover {
   cursor: pointer;
 }
@@ -533,14 +537,6 @@ tabs {
 
 .tabs label.tab[for="tab-4"] {
   display: none;
-  background: #fff;
-	z-index: 6;
-  border-bottom: #fff;
-}
-.tabs label.tab[for="tab-4"] div.label-name {
-  font-weight: 600 !important;
-  color: #102841 !important;
-  text-align: left !important;
 }
 .tabs label.tab[for="tab-5"] {
   background: rgba(0, 0, 0, 0) !important;
