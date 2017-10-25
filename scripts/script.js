@@ -14,7 +14,8 @@ function compareValue(value){
 
 function toggleMenu() {
   var bugMenu = document.getElementById("bug-menu");
-  bugMenu.style.visibility = (bugMenu.style.visibility==="visible") ? "hidden" : "visible";
+  bugMenu.style.opacity = (bugMenu.style.opacity==="1") ? "0" : "1";
+  bugMenu.style.zIndex = "1001";
 }
 
 function openTaskInbox() {

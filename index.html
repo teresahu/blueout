@@ -13,7 +13,7 @@
   <script src="scripts/accordionjs.min.js" charset="utf-8"></script>
 </head>
 <body>
-  <img src="bg-index.png" class="bg">
+  <img src="images/bg-index3.png" class="bg">
   <img id="bug" onclick="toggleMenu();" src="images/bug.png">
   <div id="bug-menu">
     <img id="menu-logo" src="images/menu-logo.png">
@@ -90,7 +90,7 @@
         <div class="accordion-title">
           <a href="#">
             Scott Fitzgerald
-            <span class="notif-number">3</span>
+            <span class="acc-number">3</span>
             <span class="notif-id">29475629</span>
           </a>
         </div>
@@ -112,7 +112,7 @@
         <div class="accordion-title">
           <a href="#">
             Hermione Granger
-            <span class="notif-number">3</span>
+            <span class="acc-number">3</span>
             <span class="notif-id">93856584</span>
           </a>
         </div>
@@ -133,7 +133,7 @@
         <div class="accordion-title">
           <a href="#">
             Ping Chen
-            <span class="notif-number">3</span>
+            <span class="acc-number">3</span>
             <span class="notif-id">29475629</span>
           </a>
         </div>
@@ -154,7 +154,7 @@
         <div class="accordion-title">
           <a href="#">
             Enrique Prieto
-            <span class="notif-number">3</span>
+            <span class="acc-number">3</span>
             <span class="notif-id">29475629</span>
           </a>
         </div>
@@ -175,7 +175,7 @@
         <div class="accordion-title">
           <a href="#">
             Rajiv Saxen
-            <span class="notif-number">3</span>
+            <span class="acc-number">3</span>
             <span class="notif-id">29475629</span>
           </a>
         </div>
@@ -224,7 +224,7 @@
       <p class="center">See All</p>
     </section>
   </div>
-
+  <div id="triangle-hack" width="280px" height="280px"></div>
   <div class="inner-container">
     <!--- TABS --->
       <section class="tabs">
@@ -240,42 +240,56 @@
         <input id="tab-4" type="radio" name="radio-set" class="tab-selector-4" />
         <label for="tab-4" class="tab tab-label-4"><div class="label-name">+</div></label>
 
-        <div class="clear-shadow"></div>
-
+        <span class="clear"></span>
         <div class="content">
-          <div class="content-1">
-            <p class="section">
-              <h3>Cash Deposit Towards Purchase</h3>
-              <p class="row">
-                <input type="text" placeholder="Amount" />
-                <input type="text" placeholder="Held by" />
-              </p>
+          <p class="h2">
+        6. ASSETS & LIABILITIES
+          </p>
+
+          <p class="section">
+            <h3>Cash Deposit Towards Purchase</h3>
+            <p class="row">
+              <input type="text" placeholder="Amount" />
+              <input type="text" placeholder="Held by" />
             </p>
-            <hr />
-            <h3>Checking and Savings</h3>
-            <section class="section">
-              <h4>Bank of America</h4>
-              <p class="row">
-                <input type="text" placeholder="Account/Asset Type">
-                <input type="text" placeholder="Account in the name of">
-              </p>
-              <p class="row">
-                <input type="text" placeholder="Account number">
-                <input type="text" onblur="flash(this.value);" placeholder="$ Cash value">
-              </p>
-            </section>
-            <section class="section">
-              <h4>PNC</h4>
-              <p class="row">
-                <input type="text" placeholder="Account/Asset Type">
-                <input type="text" placeholder="Account in the name of">
-              </p>
-              <p class="row">
-                <input type="text" placeholder="Account number">
-                <input type="text" onclick="storeValue(this.value)" onfocusout="compareValue(this.value);" placeholder="$ Cash value">
-              </p>
-            </section>
-          </div>
+          </p>
+          <hr />
+          <h3>Checking and Savings</h3>
+          <section class="section">
+            <h4>Bank of America</h4>
+            <p class="row">
+              <input type="text" placeholder="Account/Asset Type">
+              <input type="text" placeholder="Account in the name of">
+            </p>
+            <p class="row">
+              <input type="text" placeholder="Account number">
+              <input type="text" onblur="flash(this.value);" placeholder="$ Cash value">
+            </p>
+          </section>
+          <section class="section">
+            <h4>PNC</h4>
+            <p class="row">
+              <input type="text" placeholder="Account/Asset Type">
+              <input type="text" placeholder="Account in the name of">
+            </p>
+            <p class="row">
+              <input type="text" placeholder="Account number">
+              <input type="text" onclick="storeValue(this.value)" onfocusout="compareValue(this.value);" placeholder="$ Cash value">
+            </p>
+          </section>
+          <hr />
+          <h3>Vehicles Owned</h3>
+          <p class="row">
+            <input type="text" placeholder="Year/Make/Model" content="2017/Chevy/Bolt">
+            <input type="text" placeholder="Cash value" content="$37,000.00">
+          </p>
+          <hr />
+          <h3>Life Insurance</h3>
+          <p class="row">
+            <input type="text" placeholder="Enter Amount">
+            <input type="text" placeholder="Market Value">
+          </p>
+        </div>
 
           <div class="content-2">
                   <p>Some content2</p>

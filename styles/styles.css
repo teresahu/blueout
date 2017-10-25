@@ -1,6 +1,10 @@
 /* THIS CODE SHOULD BE REFACTORED INTO SASS
    ESPECIALLY TASK INBOX */
-
+/* CABIN FONT */
+@font-face {
+    font-family: "Cabin";
+    src: '../fonts/Cabin-Regular-TTF.ttf';
+}
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 1080px) {
@@ -14,11 +18,6 @@
     }*/
 }
 
-@media screen and (min-width: 630px) and (max-width: 1079px) {
-  /*hr {
-    width: 90% !important;
-  }*/
-}
 ::-webkit-scrollbar {
     display: none;
 }
@@ -113,7 +112,7 @@ tbody > tr:hover {
 }
 
 #bug-menu {
-  visibility: hidden;
+  opacity: 0;
   width: 295px;
 	height: 314px;
 	border-radius: 4px;
@@ -122,6 +121,7 @@ tbody > tr:hover {
   position:fixed;
   top: 38px;
   left: 12px;
+  transition: opacity .1s;
 }
 
 #bug-menu img:hover {
@@ -193,24 +193,49 @@ input[type=checkbox] {
   margin: 0 auto;
 }
 h2 {
-	font-size: 17px;
-	font-weight: 500;
-	color: #25292f;
+  font-family: Cabin, sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: #102841;
+  display: block;
+}
+
+p.h2 {
+  font-family: Cabin, sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: #102841;
+  border-bottom: 1px solid #999;
+  width: 99%;
+  height: 30px;
+  position: absolute;
+  left: 0px;
+  padding-left:10px;
+  margin-bottom: 2em;
 }
 
 h3 {
   font-size: 16px;
-	font-weight: 500;
+	font-weight: 600;
 	color: #464f5c;
 }
 
+h4 {
+  margin: .5em 0em;
+  padding: 0;
+}
+
 hr {
-  border: .5px solid #bbb;
+  border: .5px solid #ddd;
   margin: .5em 1em .5em 0em;
 }
 
+.clear {
+  clear: both;
+}
+
 input[type=text] {
-  width: 179px;
+  width: 200px;
 	height: 16px;
   border: none;
   padding: .5em;
@@ -369,7 +394,7 @@ span.cap-text {
 
 #task-inbox span.notif-id {
   float: right;
-  padding-right: 2px;
+  padding-right: 12px;
   color: #697489;
   font-size: 11px;
 }
@@ -383,7 +408,6 @@ span.cap-text {
   width: 13px;
   height: 13px;
   border-radius: 50%;
-  line-height: 2px;
   text-align: center;
   background: #fff;
 }
@@ -413,6 +437,9 @@ span.cap-text {
 }
 
 #task-inbox .close {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
   position: absolute;
   right: 16px;
   top: 13px;
@@ -423,11 +450,21 @@ span.cap-text {
 }
 
 #task-inbox .close:hover {
-  transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
   cursor: pointer;
   cursor: hand;
+}
+
+/* HACK FOR TABS */
+#triangle-hack {
+  width: 0;
+	height: 0;
+	border-left: 20px solid transparent;
+	border-right: 4px solid 1px #697489;
+	border-top: 58px solid #033A5A;
+  position: fixed;
+  top: 70px;
+  left: 42px;
+  z-index: 1000;
 }
 
 /* TABS */
@@ -435,6 +472,7 @@ tabs {
   position: relative;
 	margin: 40px auto;
 	width: 750px;
+  border-radius: 3px;
   -webkit-transform: skewX(30deg);
   transform: skewX(30deg);
 }
@@ -488,7 +526,7 @@ tabs {
 
 .tabs .label-name {
   letter-spacing: 1px;
-  font-family: Avenir-Roman;
+  font-family: Cabin, sans-serif;
 	font-size: 15px;
 	color: #a3d6ff;
 	font-weight: 200;
@@ -517,8 +555,15 @@ tabs {
 }
 
 .tabs input:checked + label.tab {
-  background: #102841;
+  background: #fff;
 	z-index: 6;
+  border-bottom: #fff;
+}
+
+.tabs input:checked +label.tab > .label-name {
+  font-weight: 600 !important;
+  color: #102841 !important;
+  text-align: left !important;
 }
 
 .tabs input.tab-selector-1:checked ~ .content .content-1,
@@ -531,15 +576,17 @@ tabs {
 }
 
 .content {
-  top: 42px;
+  top: 40px;
   left: 4px;
   background: #fff;
 	position: relative;
+  padding-left: 20px;
   width: 100%;
 	height: 780px;
 	z-index: 5;
-  box-shadow: 0 9px 8px 0 rgba(8, 8, 8, 0.56), 0 1px 2px 0 #a9b1be;
-	border: solid 1px #cbcfd7;
+  /*box-shadow: 0 9px 8px 0 rgba(8, 8, 8, 0.56), 0 1px 2px 0 #a9b1be;*/
+  border-top: 0;
+  border: solid 1px #cbcfd7;
   border-radius: 0 3px 3px 3px;
 }
 
@@ -547,22 +594,18 @@ tabs {
   position: absolute;
 	top: 0;
 	left: 0;
-	padding: 10px 40px;
+	padding: 10px 0px;
 	z-index: 1;
   opacity: 0;
   transition: all linear 0.1s;
 }
 
-.content div h2,
-.content div h3{
-	color: #398080;
-}
 .content div p {
 	font-size: 14px;
 	text-align: left;
 	margin: 0;
 	color: #777;
-	padding-left: 10px;
+	/*padding-left: 10px;*/
 }
 
 .content section.section {
@@ -570,4 +613,8 @@ tabs {
 	border: solid 1px #a3d6ff;
   padding: .3em 1em 1em 1em;
   margin: 1em 1em 1em 0em;
+}
+
+p.section {
+  margin-top:60px;
 }
