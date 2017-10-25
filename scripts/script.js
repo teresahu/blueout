@@ -46,11 +46,9 @@ function changeOpacity(){
 
 function openTab(){
   var d = document.getElementsByClassName("tabs")[0];
-  console.log(d.childNodes);
   d.childNodes[1].style.display = "block";
   d.childNodes[1].setAttribute("checked", "checked");
   d.childNodes[3].style.display = "block";
-  console.log(d.childNodes[5]);
   var leftPixels = 58;
   for (var j=5; j<20; j+=4){
     leftPixels += 180;
@@ -68,4 +66,9 @@ function openTaskInbox() {
 
 function closeTaskInbox() {
     document.getElementById("task-inbox").style.right = "-28%";
+}
+
+function changeContent() {
+  var d = document.getElementsByClassName("tabs")[0];
+  console.log(d.childNodes);
 }

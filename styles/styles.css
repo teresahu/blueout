@@ -47,14 +47,15 @@ img {
 }
 
 .pipeline-container {
-  padding: .25em 0em .25em 1.25em;
-  width: 98%;
+  width: 96%;
 	height: 820px;
-	background-color: #ffffff;
-  /*box-shadow: 0 9px 8px 0 rgba(8, 8, 8, 0.56), 0 1px 2px 0 #a9b1be;
-	border: solid 1px #cbcfd7;*/
+	background-color: #fff;
+  box-shadow: 0 9px 8px 0 rgba(8, 8, 8, 0.56), 0 1px 2px 0 #a9b1be;
+	border: solid 1px #cbcfd7;
   z-index: 1;
-  margin: 13% 0 0 0;
+  padding: .25em 0em .25em 0em;
+	height: 820px;
+  margin: 70px 0 0 24px;
 }
 
 table {
@@ -656,4 +657,14 @@ tabs {
 
 .content .content-2 h3:first-of-type {
   margin-top: 50px;
+}
+
+.content .content-1 img.documents {
+  position: relative;
+  margin-top:1em;
+  width: 97%;
+}
+
+.content .content-1 img.documents:hover {
+  cursor: pointer;
 }

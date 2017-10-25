@@ -4,314 +4,339 @@
 
   <!--  Meta  -->
   <meta charset="UTF-8" />
-  <title>Blue Out</title>
+  <title>Pipeline</title>
 
   <!--  Styles  -->
   <link rel="stylesheet" href="styles/styles.css">
-  <link rel="stylesheet" href="styles/accordionjs.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="scripts/script.js"></script>
-  <script src="scripts/accordionjs.min.js" charset="utf-8"></script>
 </head>
 <body>
-  <img src="images/bg-index2.png" class="bg" alt="Background" />
-  <img id="bug" onclick="toggleMenu();" src="images/bug.png" alt="Logo" />
-  <div id="bug-menu">
-    <img id="menu-logo" src="images/menu-logo.png" />
-    <img src="images/contacts.png" />
-    <img src="images/dashboard.png" />
-    <a href="pipeline.html"><img src="images/trades.png" /></a>
-  </div>
+  <img src="images/bg-pipeline2.png" class="bg">
   <img id="notification" onclick="openTaskInbox();" src="images/notification.png" />
-  <nav class="left-nav">
-    <img src="images/1.png" />
-    <img src="images/2.png" />
-    <img class="selected-icon" src="images/3.png" />
-    <a href="document-view.html"><img src="images/4.png" /><a>
-    <img src="images/5.png" />
-    <img src="images/6.png" />
-    <img src="images/7.png" />
-  </nav>
-
-<!--- RIGHT PANEL --->
-  <div class="right-panel">
-    <span class="cap-text">LOAN INFO</span>
-    <div class="row">
-      <p>
-        <b>10216 Kingbird Ct, Klamath Falls, OR</b><br/>
-        Single Family | Owner Occupied
-      </p>
-      <p>
-        <b>$355,900</b><br/>
-        Est. Value
-      </p>
+  <div class="pipeline-container">
+    <table>
+      <thead>
+        <tr>
+          <th><input type="checkbox" /></th>
+          <th><i class="fa fa-bell fa-inverse" aria-hidden="true"></i></th>
+          <th>Lock exp...</th>
+          <th>Lock Status</th>
+          <th>Borrower Name</th>
+          <th>Property Address</th>
+          <th>Milestone</th>
+          <th>Loan Officer</th>
+          <th>Loan Amount</th>
+          <th>Date F</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><input type="checkbox" /></td>
+          <td>3</td>
+          <td>4 days, 08/15/19</td>
+          <td><i class="fa fa-lock" style="color:red" aria-hidden="true"></i> NL-ER</td>
+          <td>McAllister, Hermoine</td>
+          <td>6162 Multnoma Falls Road, Kla...</td>
+          <td>Re-Submittal</td>
+          <td>Sandy Bocanto</td>
+          <td class="money">435,000.00</td>
+          <td>06/21/18</td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" /></td>
+          <td>14</td>
+          <td>1 day, 08/12/19</td>
+          <td><i class="fa fa-lock" style="color:orange" aria-hidden="true"></i> UL</td>
+          <td>Ollivander, Deirdre</td>
+          <td>92 Westhill Circle, Portland, OR...</td>
+          <td>Processing</td>
+          <td>Richard Garcia</td>
+          <td class="money">397,200.00</td>
+          <td>06/21/18</td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" /></td>
+          <td>14</td>
+          <td>1 day, 08/12/19</td>
+          <td><i class="fa fa-lock" style="color:orange" aria-hidden="true"></i> UL</td>
+          <td><a href="1003.html">Ferguson, Jessica</a></td>
+          <td>144 Fifth Street, Atlanta, GA...</td>
+          <td>Processing</td>
+          <td>Melanie DeMaeyer</td>
+          <td class="money">390,200.00</td>
+          <td>06/21/18</td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" /></td>
+          <td>2</td>
+          <td>Today, 08/11/19</td>
+          <td><i class="fa fa-lock" style="color:blue" aria-hidden="true"></i> Locked</td>
+          <td>Tsabari, Chandra</a></td>
+          <td>476 Browning Lane, Apt 45</td>
+          <td>Processing</td>
+          <td>Shumon Chao</td>
+          <td class="money">367,200.00</td>
+          <td>06/21/18</td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" /></td>
+          <td></td>
+          <td>4 days, 08/11/19</td>
+          <td><i class="fa fa-lock" style="color:red" aria-hidden="true"></i> Expired</td>
+          <td>Lui, Cixin</a></td>
+          <td>39 Fairweather Ave, San Luis Obispo</td>
+          <td>Underwriting</td>
+          <td>Stan Barrett</td>
+          <td class="money">289,000.00</td>
+          <td>06/21/18</td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" /></td>
+          <td></td>
+          <td></td>
+          <td><i class="fa fa-lock" style="color:orange" aria-hidden="true"></i> UL</td>
+          <td>Pomfrey, Delia</a></td>
+          <td>9837 16th Avenue, Seattle, WA</td>
+          <td>Underwriting</td>
+          <td>Marge Tanner</td>
+          <td class="money">287,200.00</td>
+          <td>06/21/18</td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" /></td>
+          <td>4</td>
+          <td>1 day, 08/12/19</td>
+          <td><i class="fa fa-lock" style="color:orange" aria-hidden="true"></i> UL</td>
+          <td>Delacour, Florence</a></td>
+          <td>84756 Oconomowoc Way, Ann Arbor</td>
+          <td>Re-submittal</td>
+          <td>Samuel Hong</td>
+          <td class="money">125,983.00</td>
+          <td>06/21/18</td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" /></td>
+          <td></td>
+          <td>2 days, 08/14/19</td>
+          <td><i class="fa fa-lock" style="color:blue" aria-hidden="true"></i> Locked</td>
+          <td>Clearwater, Penelope</a></td>
+          <td>32 Burling Street, Corona, NY, 13343</td>
+          <td>Processing</td>
+          <td>Terence Showalter</td>
+          <td class="money">535,900.00</td>
+          <td>06/21/18</td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" /></td>
+          <td>3</td>
+          <td>4 days, 08/15/19</td>
+          <td><i class="fa fa-lock" style="color:red" aria-hidden="true"></i> NL-ER</td>
+          <td>McAllister, Hermoine</td>
+          <td>6162 Multnoma Falls Road, Kla...</td>
+          <td>Re-Submittal</td>
+          <td>Sandy Bocanto</td>
+          <td class="money">435,000.00</td>
+          <td>06/21/18</td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" /></td>
+          <td>14</td>
+          <td>1 day, 08/12/19</td>
+          <td><i class="fa fa-lock" style="color:orange" aria-hidden="true"></i> UL</td>
+          <td>Ollivander, Deirdre</td>
+          <td>92 Westhill Circle, Portland, OR...</td>
+          <td>Processing</td>
+          <td>Richard Garcia</td>
+          <td class="money">397,200.00</td>
+          <td>06/21/18</td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" /></td>
+          <td>2</td>
+          <td>Today, 08/11/19</td>
+          <td><i class="fa fa-lock" style="color:blue" aria-hidden="true"></i> Locked</td>
+          <td>Tsabari, Chandra</a></td>
+          <td>476 Browning Lane, Apt 45</td>
+          <td>Processing</td>
+          <td>Shumon Chao</td>
+          <td class="money">367,200.00</td>
+          <td>06/21/18</td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" /></td>
+          <td></td>
+          <td>4 days, 08/11/19</td>
+          <td><i class="fa fa-lock" style="color:red" aria-hidden="true"></i> Expired</td>
+          <td>Lui, Cixin</a></td>
+          <td>39 Fairweather Ave, San Luis Obispo</td>
+          <td>Underwriting</td>
+          <td>Stan Barrett</td>
+          <td class="money">289,000.00</td>
+          <td>06/21/18</td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" /></td>
+          <td></td>
+          <td></td>
+          <td><i class="fa fa-lock" style="color:orange" aria-hidden="true"></i> UL</td>
+          <td>Pomfrey, Delia</a></td>
+          <td>9837 16th Avenue, Seattle, WA</td>
+          <td>Underwriting</td>
+          <td>Marge Tanner</td>
+          <td class="money">287,200.00</td>
+          <td>06/21/18</td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" /></td>
+          <td>4</td>
+          <td>1 day, 08/12/19</td>
+          <td><i class="fa fa-lock" style="color:orange" aria-hidden="true"></i> UL</td>
+          <td>Delacour, Florence</a></td>
+          <td>84756 Oconomowoc Way, Ann Arbor</td>
+          <td>Re-submittal</td>
+          <td>Samuel Hong</td>
+          <td class="money">125,983.00</td>
+          <td>06/21/18</td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" /></td>
+          <td></td>
+          <td>Today, 08/11/19</td>
+          <td><i class="fa fa-lock" style="color:blue" aria-hidden="true"></i> Locked</td>
+          <td>Clearwater, Penelope</a></td>
+          <td>32 Burling Street, Corona, NY, 13343</td>
+          <td>Processing</td>
+          <td>Terence Showalter</td>
+          <td class="money">535,900.00</td>
+          <td>06/21/18</td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" /></td>
+          <td>3</td>
+          <td>4 days, 08/15/19</td>
+          <td><i class="fa fa-lock" style="color:red" aria-hidden="true"></i> NL-ER</td>
+          <td>McAllister, Hermoine</td>
+          <td>6162 Multnoma Falls Road, Kla...</td>
+          <td>Re-Submittal</td>
+          <td>Sandy Bocanto</td>
+          <td class="money">435,000.00</td>
+          <td>06/21/18</td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" /></td>
+          <td>14</td>
+          <td>1 day, 08/12/19</td>
+          <td><i class="fa fa-lock" style="color:orange" aria-hidden="true"></i> UL</td>
+          <td>Ollivander, Deirdre</td>
+          <td>92 Westhill Circle, Portland, OR...</td>
+          <td>Processing</td>
+          <td>Richard Garcia</td>
+          <td class="money">397,200.00</td>
+          <td>06/21/18</td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" /></td>
+          <td>2</td>
+          <td>Today, 08/11/19</td>
+          <td><i class="fa fa-lock" style="color:blue" aria-hidden="true"></i> Locked</td>
+          <td>Tsabari, Chandra</a></td>
+          <td>476 Browning Lane, Apt 45</td>
+          <td>Processing</td>
+          <td>Shumon Chao</td>
+          <td class="money">367,200.00</td>
+          <td>06/21/18</td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" /></td>
+          <td></td>
+          <td>4 days, 08/11/19</td>
+          <td><i class="fa fa-lock" style="color:red" aria-hidden="true"></i> Expired</td>
+          <td>Lui, Cixin</a></td>
+          <td>39 Fairweather Ave, San Luis Obispo</td>
+          <td>Underwriting</td>
+          <td>Stan Barrett</td>
+          <td class="money">289,000.00</td>
+          <td>06/21/18</td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" /></td>
+          <td></td>
+          <td>Today, 08/11/19</td>
+          <td><i class="fa fa-lock" style="color:blue" aria-hidden="true"></i> Locked</td>
+          <td>Clearwater, Penelope</a></td>
+          <td>32 Burling Street, Corona, NY, 13343</td>
+          <td>Processing</td>
+          <td>Terence Showalter</td>
+          <td class="money">535,900.00</td>
+          <td>06/21/18</td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" /></td>
+          <td></td>
+          <td></td>
+          <td><i class="fa fa-lock" style="color:orange" aria-hidden="true"></i> UL</td>
+          <td>Pomfrey, Delia</a></td>
+          <td>9837 16th Avenue, Seattle, WA</td>
+          <td>Underwriting</td>
+          <td>Marge Tanner</td>
+          <td class="money">287,200.00</td>
+          <td>06/21/18</td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" /></td>
+          <td>4</td>
+          <td>1 day, 08/12/19</td>
+          <td><i class="fa fa-lock" style="color:orange" aria-hidden="true"></i> UL</td>
+          <td>Delacour, Florence</a></td>
+          <td>84756 Oconomowoc Way, Ann Arbor</td>
+          <td>Re-submittal</td>
+          <td>Samuel Hong</td>
+          <td class="money">125,983.00</td>
+          <td>06/21/18</td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" /></td>
+          <td></td>
+          <td>3 days, 08/14/19</td>
+          <td><i class="fa fa-lock" style="color:blue" aria-hidden="true"></i> Locked</td>
+          <td>Clearwater, Penelope</a></td>
+          <td>32 Burling Street, Corona, NY, 13343</td>
+          <td>Processing</td>
+          <td>Terence Showalter</td>
+          <td class="money">535,900.00</td>
+          <td>06/21/18</td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" /></td>
+          <td>14</td>
+          <td>1 day, 08/12/19</td>
+          <td><i class="fa fa-lock" style="color:orange" aria-hidden="true"></i> UL</td>
+          <td>Ollivander, Deirdre</td>
+          <td>92 Westhill Circle, Portland, OR...</td>
+          <td>Processing</td>
+          <td>Richard Garcia</td>
+          <td class="money">397,200.00</td>
+          <td>06/21/18</td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" /></td>
+          <td></td>
+          <td>Today, 08/11/19</td>
+          <td><i class="fa fa-lock" style="color:blue" aria-hidden="true"></i> Locked</td>
+          <td>Clearwater, Penelope</a></td>
+          <td>32 Burling Street, Corona, NY, 13343</td>
+          <td>Processing</td>
+          <td>Terence Showalter</td>
+          <td class="money">535,900.00</td>
+          <td>06/21/18</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <!-- <div id="wrapper">
+    <div class="flashEffect">
     </div>
-    <div class="row">
-      <p>
-        <b>3.25%</b><br/>
-        Fixed 30yr Conv
-      </p>
-    </div>
-    <img id="timeline" src="images/timeline.png" />
-  </div>
-
-<!--- TASK INBOX --->
-  <div id="task-inbox">
-    <h1>TASK INBOX</h1>
-    <span class="close" onclick="closeTaskInbox();">+</span>
-    <section>
-      <h2>Today</h2>
-      <ul>
-        <li>
-          <div class="task">
-            Smith N. Wollensky
-            <span class="notif-number">3</span>
-            <span class="notif-id">29475629</span>
-          </div>
-        </li>
-        <li>
-          <div class="task">
-            Charles Bukowski
-            <span class="notif-number">3</span>
-            <span class="notif-id">29475629</span>
-          </div>
-        </li>
-        <li>
-          <div class="task">
-            Guarav Srinavasan
-            <span class="notif-number">3</span>
-            <span class="notif-id">29582376</span>
-          </div>
-        </li>
-      </ul>
-    </section>
-
-    <h2>Yesterday</h2>
-    <!-- Accordion wrapper -->
-    <div id="the-accordion" class="accordion-wrapper">
-      <!-- accordion panel -->
-      <div class="accordion-panel">
-        <div class="accordion-title">
-          <a href="#">
-            Scott Fitzgerald
-            <span class="acc-number">3</span>
-            <span class="notif-id">29475629</span>
-          </a>
-        </div>
-        <div class="accordion-content">
-            Exception Title<br/>
-            <span class="sm-text">Thur, July 6, 2017; 08:15am</span>
-        </div>
-        <div class="accordion-content">
-          Exception Title<br/>
-          <span class="sm-text">Thur, July 6, 2017; 08:15am</span>
-        </div>
-        <div class="accordion-content">
-          Exception Title<br/>
-          <span class="sm-text">Thur, July 6, 2017; 08:15am</span>
-        </div>
-      </div>
-      <!-- accordion panel -->
-      <div class="accordion-panel">
-        <div class="accordion-title">
-          <a href="#">
-            Hermione Granger
-            <span class="acc-number">3</span>
-            <span class="notif-id">93856584</span>
-          </a>
-        </div>
-        <div class="accordion-content">
-            Exception Title<br/>
-            <span class="sm-text">Thur, July 6, 2017; 08:15am</span>
-        </div>
-        <div class="accordion-content">
-          Exception Title<br/>
-          <span class="sm-text">Thur, July 6, 2017; 08:15am</span>
-        </div>
-        <div class="accordion-content">
-          Exception Title<br/>
-          <span class="sm-text">Thur, July 6, 2017; 08:15am</span>
-        </div>
-      </div>
-      <div class="accordion-panel">
-        <div class="accordion-title">
-          <a href="#">
-            Ping Chen
-            <span class="acc-number">3</span>
-            <span class="notif-id">29475629</span>
-          </a>
-        </div>
-        <div class="accordion-content">
-            Exception Title<br/>
-            <span class="sm-text">Thur, July 6, 2017; 08:15am</span>
-        </div>
-        <div class="accordion-content">
-          Exception Title<br/>
-          <span class="sm-text">Thur, July 6, 2017; 08:15am</span>
-        </div>
-        <div class="accordion-content">
-          Exception Title<br/>
-          <span class="sm-text">Thur, July 6, 2017; 08:15am</span>
-        </div>
-      </div>
-      <div class="accordion-panel">
-        <div class="accordion-title">
-          <a href="#">
-            Enrique Prieto
-            <span class="acc-number">3</span>
-            <span class="notif-id">29475629</span>
-          </a>
-        </div>
-        <div class="accordion-content">
-            Exception Title<br/>
-            <span class="sm-text">Thur, July 6, 2017; 08:15am</span>
-        </div>
-        <div class="accordion-content">
-          Exception Title<br/>
-          <span class="sm-text">Thur, July 6, 2017; 08:15am</span>
-        </div>
-        <div class="accordion-content">
-          Exception Title<br/>
-          <span class="sm-text">Thur, July 6, 2017; 08:15am</span>
-        </div>
-      </div>
-      <div class="accordion-panel">
-        <div class="accordion-title">
-          <a href="#">
-            Rajiv Saxen
-            <span class="acc-number">3</span>
-            <span class="notif-id">29475629</span>
-          </a>
-        </div>
-        <div class="accordion-content">
-            Exception Title<br/>
-            <span class="sm-text">Thur, July 6, 2017; 08:15am</span>
-        </div>
-        <div class="accordion-content">
-          Exception Title<br/>
-          <span class="sm-text">Thur, July 6, 2017; 08:15am</span>
-        </div>
-        <div class="accordion-content">
-          Exception Title<br/>
-          <span class="sm-text">Thur, July 6, 2017; 08:15am</span>
-        </div>
-      </div>
-    </div>
-
-    <section>
-      <h2>Friday, October 20, 2017</h2>
-      <ul>
-        <li>
-          <div class="task">
-            Hope Wortman
-          </div>
-        </li>
-        <li>
-          <div class="task">
-            Leticia Underwood
-          </div>
-        </li>
-        <li>
-          <div class="task">
-            Zoe Barnes
-          </div>
-        </li>
-        <li>
-          <div class="task">
-            William Adama
-          </div>
-        </li>
-      </ul>
-    </section>
-    <section class="stick-bottom">
-      <hr>
-      <p class="center">See All</p>
-    </section>
-  </div>
-  <div id="triangle-hack" width="280px" height="280px"></div>
-  <div class="inner-container">
-    <!--- TABS --->
-      <section class="tabs">
-        <input id="tab-1" type="radio" name="radio-set" class="tab-selector-1" />
-        <label for="tab-1" class="tab tab-label-1"><div class="label-name">DOCUMENTS</div></label>
-
-        <input id="tab-2" type="radio" name="radio-set" class="tab-selector-2" checked="checked" />
-        <label for="tab-2" class="tab tab-label-2"><div class="label-name">1003</div></label>
-
-        <input id="tab-3" type="radio" name="radio-set" class="tab-selector-3" />
-        <label for="tab-3" class="tab tab-label-3"><div class="label-name">REGZ-LE</div></label>
-
-        <input id="tab-4" type="radio" name="radio-set" class="tab-selector-4" />
-        <label for="tab-4" class="tab tab-label-4"><div class="label-name">LOAN ESTIMATE</div></label>
-
-        <input id="tab-5" type="radio" name="radio-set" class="tab-selector-5" onclick="openTab();" />
-        <label for="tab-5" class="tab tab-label-5"><div class="label-name">+</div></label>
-
-        <span class="clear"></span>
-        <div class="content">
-          <div class="content-1">
-            <p>Some content2</p>
-          </div>
-
-          <div class="content-2">
-            <p class="h2">6. ASSETS & LIABILITIES</p>
-            <p class="section">
-              <h3>Cash Deposit Towards Purchase</h3>
-              <p class="row">
-                <input type="text" placeholder="Amount" />
-                <input type="text" placeholder="Held by" />
-              </p>
-            </p>
-            <hr />
-            <h3>Checking and Savings</h3>
-            <section class="section">
-              <h4>Bank of America</h4>
-              <p class="row">
-                <input type="text" placeholder="Account/Asset Type">
-                <input type="text" placeholder="Account in the name of">
-              </p>
-              <p class="row">
-                <input type="text" placeholder="Account number">
-                <input type="text" onblur="flash(this.value);" placeholder="$ Cash value">
-              </p>
-            </section>
-            <section class="section">
-              <h4>PNC</h4>
-              <p class="row">
-                <input type="text" placeholder="Account/Asset Type">
-                <input type="text" placeholder="Account in the name of">
-              </p>
-              <p class="row">
-                <input type="text" placeholder="Account number">
-                <input type="text" onclick="storeValue(this.value)" onfocusout="compareValue(this.value);" placeholder="$ Cash value">
-              </p>
-            </section>
-            <hr />
-              <h3>Vehicles Owned</h3>
-              <p class="row">
-                <input type="text" placeholder="Year/Make/Model" content="2017/Chevy/Bolt">
-                <input type="text" placeholder="Cash value" content="$37,000.00">
-              </p>
-              <hr />
-              <h3>Life Insurance</h3>
-              <p class="row">
-                <input type="text" placeholder="Enter Amount">
-                <input type="text" placeholder="Market Value">
-              </p>
-          </div>
-          <div class="content-3">
-                  <p>Some content3</p>
-          </div>
-          <div class="content-4">
-                  <p>Some content4</p>
-          </div>
-        </div>
-      </section>
-  </div>
-  <script type="text/javascript">
-    (function(){ new AccordionJS();})();
-  </script>
-  </body>
-  <div id="preload">
-    <img src="images/bg-index2.png" width="1" height="1" alt="Background" />
-  </div>
+  </div> -->
+</body>
 </html>
