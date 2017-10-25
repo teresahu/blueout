@@ -160,10 +160,10 @@ tbody > tr:hover {
 
 .left-nav img {
   margin: 0;
-  width: 18px;
-  padding: 22px;
   cursor: pointer;
   cursor: hand;
+  width: 27px;
+  padding: 17px;
 }
 
 .left-nav img:hover {
