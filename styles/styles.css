@@ -208,7 +208,7 @@ h2 {
   color: #102841;
   display: block;
 }
-.content-1 p.h2 {
+.content-2 p.h2 {
   font-family: Cabin, sans-serif;
   font-size: 15px;
   font-weight: 600;
@@ -490,6 +490,7 @@ tabs {
   transform: skewX(30deg);
 }
 .tabs input[type="radio"] {
+  display:none;
 	position: absolute;
 	z-index: 1000;
 	width: 180px;
@@ -499,14 +500,13 @@ tabs {
 	opacity: 0;
 }
 .tabs input#tab-2[type="radio"]{
-	left: 240px;
+	left: 58px;
 }
 .tabs input#tab-3[type="radio"]{
-	left: 420px;
+	left: 240px;
 }
 .tabs input#tab-4[type="radio"]{
-  display:none;
-	left: 600px;
+	left: 420px;
 }
 
 .tabs input#tab-5[type="radio"]{
@@ -535,7 +535,11 @@ tabs {
   transform: skewX(10deg);
 }
 
-.tabs label.tab[for="tab-4"] {
+.tabs label.tab[for="tab-1"] {
+  display: none;
+}
+
+.tabs input#tab-1 {
   display: none;
 }
 .tabs label.tab[for="tab-5"] {
@@ -560,7 +564,7 @@ tabs {
 }
 
 .tabs label.tab:first-of-type {
-    z-index: 4;
+    z-index: 0;
 }
 
 .tab-label-2 {
@@ -650,6 +654,6 @@ tabs {
   cursor:pointer;
 }
 
-.content .content-1 h3:first-of-type {
+.content .content-2 h3:first-of-type {
   margin-top: 50px;
 }

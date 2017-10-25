@@ -46,12 +46,16 @@ function changeOpacity(){
 
 function openTab(){
   var d = document.getElementsByClassName("tabs")[0];
-  for (var i=0; i<4; i++){
-    d.removeChild(d.childNodes[17]);
+  console.log(d.childNodes);
+  d.childNodes[1].style.display = "block";
+  d.childNodes[1].setAttribute("checked", "checked");
+  d.childNodes[3].style.display = "block";
+  console.log(d.childNodes[5]);
+  var leftPixels = 58;
+  for (var j=5; j<20; j+=4){
+    leftPixels += 180;
+    d.childNodes[j].style.left = leftPixels +"px";
   }
-  d.childNodes[13].style.display = "block";
-  d.childNodes[13].setAttribute("checked", "checked");
-  d.childNodes[15].style.display = "block";
 }
 
 function stopOpacity() {
