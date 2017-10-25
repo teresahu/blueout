@@ -69,7 +69,8 @@ function closeTaskInbox() {
 }
 
 function switchContent() {
-  var c = document.getElementsByClassName("content-1")[0];
-  console.log(c.childNodes);
-  c.childNodes[1].innerHTML = "";
+  var documents = document.getElementsByClassName("documents");
+  documents[0].style.display = "none";
+  document.getElementById("content-1-hidden").style.display="block";
+  document.getElementsByClassName("label-name")[0].innerHTML = "ULD/PDD";
 }

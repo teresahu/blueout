@@ -209,7 +209,7 @@ h2 {
   color: #102841;
   display: block;
 }
-.content-2 p.h2 {
+.content-2 p.h2, .content-1 p.h2 {
   font-family: Cabin, sans-serif;
   font-size: 15px;
   font-weight: 600;
@@ -659,12 +659,22 @@ tabs {
   margin-top: 50px;
 }
 
+.content #content-1-hidden h3:first-of-type {
+  padding-top: 50px;
+}
+
 .content .content-1 img.documents {
-  position: relative;
-  margin-top:1em;
-  width: 97%;
+  position: absolute;
+  top: 1em;
+  width: 92%;
+  display: block;
 }
 
 .content .content-1 img.documents:hover {
   cursor: pointer;
+}
+
+.content .content-1 #content-1-hidden {
+  display: none;
+  margin-top: -10px;
 }
