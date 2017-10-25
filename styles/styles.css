@@ -199,19 +199,17 @@ h2 {
   color: #102841;
   display: block;
 }
-
-p.h2 {
+.content-1 p.h2 {
   font-family: Cabin, sans-serif;
   font-size: 15px;
   font-weight: 600;
   color: #102841;
   border-bottom: 1px solid #999;
-  width: 99%;
+  width: 96.4%;
   height: 30px;
   position: absolute;
   left: 0px;
-  padding-left:10px;
-  margin-bottom: 2em;
+  padding-left: 16px;
 }
 
 h3 {
@@ -230,7 +228,7 @@ hr {
   margin: .5em 1em .5em 0em;
 }
 
-.clear {
+span.clear {
   clear: both;
 }
 
@@ -298,7 +296,7 @@ input[type=text]:focus::placeholder {
   color: #fff;
   float: right;
   width: 22%;
-  margin-right: 1%;
+  margin-right: 1.6%;
   margin-top:5%;
 }
 
@@ -580,11 +578,10 @@ tabs {
   left: 4px;
   background: #fff;
 	position: relative;
-  padding-left: 20px;
   width: 100%;
 	height: 780px;
 	z-index: 5;
-  /*box-shadow: 0 9px 8px 0 rgba(8, 8, 8, 0.56), 0 1px 2px 0 #a9b1be;*/
+  box-shadow: 0 9px 8px 0 rgba(8, 8, 8, 0.56), 0 1px 2px 0 #a9b1be;
   border-top: 0;
   border: solid 1px #cbcfd7;
   border-radius: 0 3px 3px 3px;
@@ -594,9 +591,10 @@ tabs {
   position: absolute;
 	top: 0;
 	left: 0;
-	padding: 10px 0px;
+	padding: 10px 26px;
 	z-index: 1;
   opacity: 0;
+  width: 96%;
   transition: all linear 0.1s;
 }
 
@@ -615,6 +613,6 @@ tabs {
   margin: 1em 1em 1em 0em;
 }
 
-p.section {
-  margin-top:60px;
+.content .content-1 h3:first-of-type {
+  margin-top: 50px;
 }
