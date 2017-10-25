@@ -44,6 +44,13 @@ function changeOpacity(){
   }
 }
 
+function openTab(){
+  var labels = document.getElementsByClassName("tab");
+  var newTabLabel = labels[3];
+  newTabLabel.style.display="block";
+  labels[4].style.display="none";
+}
+
 function stopOpacity() {
   clearTimeout(opacity);
 }
