@@ -146,9 +146,9 @@ tbody > tr:hover {
 }
 
 #bug-menu > img:not(:first-child), #bug-menu > a > img {
-  height: 60px;
-  margin: 10px;
-  padding: 20px;
+  height: 80px;
+  margin: 0px 20px;
+  padding-left: 12px;
   display: inline-block;
 }
 

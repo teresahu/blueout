@@ -68,7 +68,8 @@ function closeTaskInbox() {
     document.getElementById("task-inbox").style.right = "-28%";
 }
 
-function changeContent() {
-  var d = document.getElementsByClassName("tabs")[0];
-  console.log(d.childNodes);
+function switchContent() {
+  var c = document.getElementsByClassName("content-1")[0];
+  console.log(c.childNodes);
+  c.childNodes[1].innerHTML = "";
 }
