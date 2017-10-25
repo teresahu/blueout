@@ -1,6 +1,10 @@
 /* THIS CODE SHOULD BE REFACTORED INTO SASS
    ESPECIALLY TASK INBOX */
 /* CABIN FONT */
+div#preload {
+  display:none;
+}
+
 @font-face {
     font-family: "Cabin";
     src: '../fonts/Cabin-Regular-TTF.ttf';
@@ -296,7 +300,7 @@ input[type=text]:focus::placeholder {
   color: #fff;
   float: right;
   width: 22%;
-  margin-right: 1.6%;
+  margin-right: 2%;
   margin-top:5%;
 }
 
