@@ -27,35 +27,65 @@
   <img id="notification" onclick="openTaskInbox();" src="images/notification.png" />
   <nav class="left-nav">
     <img src="images/1.png" />
-    <img src="images/2.png" />
+    <a href="document-view.html"><img src="images/2.png" /></a>
     <img class="selected-icon" src="images/3.png" />
-    <a href="document-view.html"><img src="images/4.png" /><a>
+    <img src="images/4.png" />
     <img src="images/5.png" />
     <img src="images/6.png" />
     <img src="images/7.png" />
   </nav>
 
 <!--- RIGHT PANEL --->
-  <div class="right-panel">
-    <span class="cap-text">LOAN INFO</span>
-    <div class="row">
-      <p>
-        <b>10216 Kingbird Ct, Klamath Falls, OR</b><br/>
-        Single Family | Owner Occupied
-      </p>
-      <p>
-        <b>$355,900</b><br/>
-        Est. Value
-      </p>
-    </div>
-    <div class="row">
-      <p>
-        <b>3.25%</b><br/>
-        Fixed 30yr Conv
-      </p>
-    </div>
-    <img id="timeline" src="images/timeline.png" />
+<div class="right-panel">
+  <p class="cap-text">LOAN INFO</p>
+  <div class="row">
+    <p>
+      <span class="heavy">10216 Kingbird Ct, Klamath Falls, OR</span><br/>
+      <span class="light">Single Family | Owner Occupied</span>
+    </p>
   </div>
+  <div class="row">
+    <p class="row-left">
+      <span class="heavy">$355,900</span><br/>
+      <span class="light">Est. Value</span>
+    </p>
+    <p>
+      <span class="heavy">3.25%</span><br/>
+      <span class="light">Fixed 30yr Conv</span>
+    </p>
+  </div>
+  <div class="row">
+    <p class="row-left">
+      <span class="heavy">Cash Out Refinance</span><br/>
+      <span class="light">Purpose of Loan</span>
+    </p>
+    <p>
+      <span class="heavy">$455,900</span><br/>
+      <span class="light">Loan Amount</span>
+    </p>
+  </div>
+  <div class="row">
+    <p class="row-left">
+      <span class="heavy">Locked Requested</span><br/>
+      <span class="light">Lock</span>
+    </p>
+    <p>
+      <span class="heavy">09/08/17</span><br/>
+      <span class="light">Est. Closing Date</span>
+    </p>
+  </div>
+  <div class="row">
+    <p class="row-left">
+      <span class="heavy">20/40</span><br/>
+      <span class="light">DTI</span>
+    </p>
+    <p>
+      <span class="heavy">90/95</span><br/>
+      <span class="light">LTV/CLTV</span>
+    </p>
+  </div>
+  <img id="timeline" src="images/timeline.png" />
+</div>
 
 <!--- TASK INBOX --->
   <div id="task-inbox">

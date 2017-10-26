@@ -9,6 +9,11 @@ div#preload {
     font-family: "Cabin";
     src: '../fonts/Cabin-Regular-TTF.ttf';
 }
+
+@font-face {
+    font-family: "Avenir";
+    src: '../fonts/Avenir.ttc';
+}
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 1080px) {
@@ -305,21 +310,47 @@ input[type=text]:focus::placeholder {
 .right-panel {
   color: #fff;
   float: right;
-  width: 22%;
-  margin-right: 2%;
-  margin-top:5%;
+  width: 21%;
+  margin-right: 2.5%;
+  margin-top:2%;
+  font-family: Avenir, sans-serif;
+}
+
+.right-panel p.row-left {
+    width: 60%;
+  }
+
+.right-panel span.light {
+  font-weight: 100;
+  font-size: 12px;
+  position: relative;
+  top: -4px;
+}
+
+.right-panel span.heavy {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.right-panel .row > p {
+  margin: 0px 0px 16px 0px;
+  padding: 0px;
 }
 
 img#timeline {
-  width:92%;
+  width:101%;
   margin:0 auto;
-  padding:4% 0 0 4%;
+  padding:6% 0 0 1%;
 }
 
-span.cap-text {
+p.cap-text {
+  font-family: Avenir, sans-serif;
   text-transform: capitalize;
-  font-size: 17px;
-	font-weight: 500;
+  font-size: 18px;
+	font-weight: 300;
+  width: 100%;
+  padding: 0px 0px 4px 6px;
+  border-bottom: 1px solid rgba(255,255,255,0.4);
 }
 
 /* TASK INBOX */
