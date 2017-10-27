@@ -596,18 +596,22 @@ tabs {
   transform: skewX(10deg);
 }
 
-.tabs label.tab[for="tab-1"] {
+.tabs label.tab[for="tab-4"] {
   display: none;
 }
 
-.tabs input#tab-1 {
+.tabs input#tab-4 {
   display: none;
 }
 .tabs label.tab[for="tab-5"] {
   background: rgba(0, 0, 0, 0) !important;
   border: 0;
-  width: 20px;
-  font-size: 20px;
+  width: 10px;
+  font-weight: 100 !important;
+}
+
+.tabs label.tab[for="tab-5"] .label-name {
+    font-size: 22px;
 }
 
 .tabs .label-name {
@@ -625,7 +629,7 @@ tabs {
 }
 
 .tabs label.tab:first-of-type {
-    z-index: 0;
+    z-index: 4;
 }
 
 .tab-label-2 {
@@ -715,7 +719,7 @@ tabs {
   cursor:pointer;
 }
 
-.content .content-2 h3:first-of-type, .content .content-3 h3:first-of-type, .content .content-4 h3:first-of-type {
+.content .content-2 h3:first-of-type, .content .content-3 h3:first-of-type, .content .content-1 h3:first-of-type {
   margin-top: 50px;
 }
 
@@ -723,18 +727,18 @@ tabs {
   padding-top: 50px;
 }
 
-.content .content-1 img.documents {
+.content .content-4 img.documents {
   position: absolute;
   top: 1em;
   width: 92%;
   display: block;
 }
 
-.content .content-1 img.documents:hover {
+.content .content-4 img.documents:hover {
   cursor: pointer;
 }
 
-.content .content-1 #content-1-hidden {
+.content .content-4 #content-1-hidden {
   display: none;
   margin-top: -10px;
 }
