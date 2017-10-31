@@ -276,6 +276,17 @@ span.clear {
   clear: both;
 }
 
+label.form-label {
+  font-family: Avenir;
+	font-size: 11px;
+	text-align: left;
+	color: #464f5c;
+  position: relative;
+  left: 58px;
+  top: 10px;
+  z-index: 101;
+}
+
 input[type=text] {
   width: 200px;
 	height: 16px;
@@ -286,6 +297,7 @@ input[type=text] {
   margin: .5em 1em 1em 0em;
   font-size: 13px;
 	color: #000;
+  position: relative;
 }
 
 input[type=text]::placeholder {
@@ -727,14 +739,14 @@ tabs {
   padding-top: 50px;
 }
 
-.content .content-4 img.documents {
+.content img.documents {
   position: absolute;
   top: 1em;
   width: 92%;
   display: block;
 }
 
-.content .content-4 img.documents:hover {
+.content img.documents:hover {
   cursor: pointer;
 }
 

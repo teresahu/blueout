@@ -308,7 +308,7 @@
               </p>
               <p class="row">
                 <input type="text" placeholder="Account number">
-                <input type="text" onblur="flash(this.value);" placeholder="$ Cash value">
+                <input type="text" onblur="flash(this.value);" placeholder="$ Cash value" onfocus="console.log(this.previousElementSibling);">
               </p>
             </section>
             <section class="section">
@@ -319,6 +319,7 @@
               </p>
               <p class="row">
                 <input type="text" placeholder="Account number">
+                <!-- <label for="cash-value" class="form-label">Cash Value</label> -->
                 <input type="text" onclick="storeValue(this.value)" onfocusout="compareValue(this.value);" placeholder="$ Cash value">
               </p>
             </section>
