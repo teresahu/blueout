@@ -76,11 +76,13 @@
     </div>
     <div class="row">
       <p class="row-left">
-        <span class="heavy">20/40</span><br/>
+        <span class="flash"></span>
+        <span class="heavy"><span id="numerator">20</span>/<span id="denominator">40</span></span><br/>
         <span class="light">DTI</span>
       </p>
       <p>
-        <span class="heavy">90/95</span><br/>
+        <span class="flash"></span>
+        <span class="heavy"><span id="numerator2">90</span>/<span id="denominator2">95</span></span><br/>
         <span class="light">LTV/CLTV</span>
       </p>
     </div>
@@ -308,7 +310,7 @@
               </p>
               <p class="row">
                 <input type="text" placeholder="Account number">
-                <input type="text" onblur="flash(this.value);" placeholder="$ Cash value" onfocus="console.log(this.previousElementSibling);">
+                <input type="text" onclick="storeValue(this.value)" onfocusout="compareValue(this.value);" onblur="flash(this.value);" placeholder="$ Cash value" onfocus="console.log(this.previousElementSibling);">
               </p>
             </section>
             <section class="section">
@@ -320,7 +322,7 @@
               <p class="row">
                 <input type="text" placeholder="Account number">
                 <!-- <label for="cash-value" class="form-label">Cash Value</label> -->
-                <input type="text" onclick="storeValue(this.value)" onfocusout="compareValue(this.value);" placeholder="$ Cash value">
+                <input type="text" onclick="storeValue(this.value)" onfocusout="compareValue(this.value);" onblur="flash(this.value);" placeholder="$ Cash value">
               </p>
             </section>
             <hr />

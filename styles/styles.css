@@ -320,6 +320,29 @@ input[type=text]:focus::placeholder {
   color: #012337;
 }
 
+.flash {
+  background: linear-gradient(88deg, #163d5d, #a3d6ff);
+  background-size: 100% 100%;
+  width: 0px;
+  height: 40px;
+  transition: 1s width;
+  position: fixed;
+  z-index: -1;
+  margin-left: -4px;
+
+  -webkit-animation: AnimationName 2s ease;
+  animation: AnimationName 2s ease;
+
+  @-webkit-keyframes AnimationName {
+      0%{background-position:4% 100%}
+      100%{background-position:97% 0%}
+  }
+  @keyframes AnimationName {
+      0%{background-position:4% 100%}
+      100%{background-position:97% 0%}
+  }
+}
+
 .row {
   display: -webkit-flex;
    display: flex;
