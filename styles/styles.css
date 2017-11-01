@@ -582,8 +582,9 @@ tabs {
 	margin: 40px auto;
 	width: 750px;
   border-radius: 3px 3px 0px 0px;
-  -webkit-transform: skewX(30deg);
-  transform: skewX(30deg);
+  /*transform: perspective(5px) rotateX(2deg);
+	transform-origin: bottom;*/
+
 }
 .tabs input[type="radio"] {
   display:none;
@@ -628,7 +629,8 @@ tabs {
 	display: block;
 	width: 140px;
   border-radius: 3px 3px 0 0;
-  transform: skewX(10deg);
+	transform: perspective(5px) rotateX(2deg);
+	transform-origin: bottom left;
 }
 
 .tabs label.tab[for="tab-4"] {
@@ -652,11 +654,13 @@ tabs {
 .tabs .label-name {
   letter-spacing: 1px;
   font-family: Cabin, sans-serif;
-	font-size: 15px;
+	font-size: 14px;
 	color: #a3d6ff;
 	font-weight: 100;
 	text-align: center;
-  transform: skewX(-10deg);
+  margin: 4px 0px 0px -48px;
+  transform: perspective(5px) rotateX(-2deg) !important;
+  transform-origin: bottom left;
 }
 
 .tabs input:hover + label.tab {
@@ -686,9 +690,11 @@ tabs {
 }
 
 .tabs input:checked +label.tab > .label-name {
+  font-size: 16px;
   font-weight: 600 !important;
   color: #102841 !important;
-  text-align: left !important;
+  transform: perspective(5px) rotateX(-1deg) !important;
+  transform-origin: bottom left;
 }
 
 .tabs input.tab-selector-1:checked ~ .content .content-1,
